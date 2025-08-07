@@ -87,6 +87,25 @@
             font-size: 1.4rem;
             color: #4CAF50; /* Green */
         }
+        .recommendations {
+            display: flex;
+            justify-content: space-around;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        .recommendation-card {
+            flex-basis: 22%;
+            background: #fafafa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            min-width: 200px;
+            border: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         .join-section {
             text-align: center;
             padding: 3rem 0;
@@ -185,12 +204,12 @@
 
             <section class="section">
                 <h2>こんな方におすすめ</h2>
-                <ul>
-                    <li>AI・機械学習の初学者で、何から学べばいいか分からない方</li>
-                    <li>一緒に学ぶ仲間を見つけて、モチベーションを維持したい方</li>
-                    <li>自分のアイデアを形にするための技術的な相談がしたい方</li>
-                    <li>ポートフォリオとなる成果物を作りたい学生や社会人の方</li>
-                </ul>
+                <div class="recommendations">
+                    <div class="recommendation-card"><p>AI・機械学習の初学者で、何から学べばいいか分からない方</p></div>
+                    <div class="recommendation-card"><p>一緒に学ぶ仲間を見つけて、モチベーションを維持したい方</p></div>
+                    <div class="recommendation-card"><p>自分のアイデアを形にするための技術的な相談がしたい方</p></div>
+                    <div class="recommendation-card"><p>ポートフォリオとなる成果物を作りたい学生や社会人の方</p></div>
+                </div>
             </section>
 
             <section class="section">
