@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIプログラミング学習コミュニティ</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f9;
+            color: #333;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            display: block;
+        }
+        header {
+            background-color: #2E7D32; /* Dark Green */
+            color: #ecf0f1;
+            text-align: center;
+            padding: 4rem 2rem;
+            border-radius: 8px;
+        }
+        header h1 {
+            font-size: 2.8rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            opacity: 0.9;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #4CAF50; /* Green */
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 2rem;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #388E3C; /* Darker Green */
+        }
+        .section {
+            background: #fff;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .section h2 {
+            text-align: center;
+            margin-top: 0;
+            font-size: 2rem;
+            color: #2E7D32; /* Dark Green */
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            gap: 1.5rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        .feature {
+            flex-basis: 30%;
+            text-align: center;
+            padding: 1.5rem;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            min-width: 250px;
+        }
+        .feature h3 {
+            font-size: 1.4rem;
+            color: #4CAF50; /* Green */
+        }
+        .join-section {
+            text-align: center;
+            padding: 3rem 0;
+        }
+        .pricing-plans {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        .plan {
+            flex: 1;
+            max-width: 320px;
+            min-width: 280px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .plan:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+        .plan.professional {
+            border-color: #4CAF50; /* Green */
+            border-width: 2px;
+        }
+        .plan h3 {
+            font-size: 1.6rem;
+            color: #2E7D32; /* Dark Green */
+        }
+        .plan .price {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #4CAF50; /* Green */
+            margin: 1rem 0;
+        }
+        .plan ul {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+        .plan ul li {
+            margin-bottom: 0.8rem;
+        }
+        .plan-button {
+            margin-top: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: #777;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#81C784;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#4CAF50;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <circle cx="50" cy="50" r="45" fill="url(#grad1)"/>
+                <text x="50" y="62" font-family="Arial, sans-serif" font-size="35" fill="#FFFFFF" text-anchor="middle" font-weight="bold">AI</text>
+            </svg>
+            <h1>未来を創るAIプログラミングを、仲間と共に学ぼう</h1>
+            <p>初心者から経験者まで、誰もがAI技術を学び、実践し、成長できる場所です。</p>
+            <a href="#" class="cta-button">今すぐDiscordに参加する</a>
+        </header>
+
+        <main>
+            <section class="section">
+                <h2>このコミュニティで得られること</h2>
+                <div class="features">
+                    <div class="feature">
+                        <h3>最新情報の共有</h3>
+                        <p>日々進化するAI業界の最新ニュースや論文、技術トレンドをキャッチアップできます。</p>
+                    </div>
+                    <div class="feature">
+                        <h3>実践的なプロジェクト</h3>
+                        <p>仲間とチームを組んで、Webアプリや分析モデルなど、実践的な開発に挑戦できます。</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Q&Aとサポート</h3>
+                        <p>学習中の疑問やエラーを気軽に質問し、経験豊富なメンバーからアドバイスがもらえます。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>こんな方におすすめ</h2>
+                <ul>
+                    <li>AI・機械学習の初学者で、何から学べばいいか分からない方</li>
+                    <li>一緒に学ぶ仲間を見つけて、モチベーションを維持したい方</li>
+                    <li>自分のアイデアを形にするための技術的な相談がしたい方</li>
+                    <li>ポートフォリオとなる成果物を作りたい学生や社会人の方</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>料金プラン</h2>
+                <div class="pricing-plans">
+                    <div class="plan">
+                        <h3>スタータープラン</h3>
+                        <p class="price">月額 9,800円</p>
+                        <ul>
+                            <li>全てのコース受講</li>
+                        </ul>
+                        <a href="#" class="cta-button plan-button">申し込む</a>
+                    </div>
+                    <div class="plan professional">
+                        <h3>プロフェッショナルプラン</h3>
+                        <p class="price">月額 29,800円</p>
+                        <ul>
+                            <li>全てのコース受講</li>
+                            <li>スペシャリストによるフォロー</li>
+                            <li>イベント招待</li>
+                        </ul>
+                        <a href="#" class="cta-button plan-button">申し込む</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section join-section">
+                <h2>さあ、あなたもコミュニティに参加しよう！</h2>
+                <p>AI開発の第一歩を、私たちと一緒に踏み出しませんか？</p>
+                <a href="#" class="cta-button">Discordに参加する</a>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 AI Programming Community. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
